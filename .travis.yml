@@ -1,0 +1,16 @@
+language: python
+python:
+    - "2.7"
+    - "3.5"
+    - "3.6"
+
+install:
+    - pip install -e .[test]
+
+script: py.test src --cov=src --cov-report term-missing
+
+notifications:
+    email: false
+
+after_success:
+  - coveralls
