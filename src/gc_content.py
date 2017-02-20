@@ -3,13 +3,6 @@
 from sys import argv
 
 
-def open_fasta(file):
-    """Open test file and return as string."""
-    with open(file) as fasta:
-        output = fasta.read()
-    return output
-
-
 def format_data(fasta):
     """Format Fasta file into dict."""
     step1 = fasta.split()
@@ -30,7 +23,14 @@ def highest_gc(data):
     return highest_gc[1] + '\n' + str(highest_gc[0])
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     script, filename = argv
+
+    def open_fasta(file):
+        """Open test file and return as string."""
+        with open(file) as fasta:
+            output = fasta.read()
+        return output
+
     opened = open_fasta(filename)
     print(highest_gc(format_data(opened)))
