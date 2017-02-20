@@ -4,7 +4,7 @@
 from setuptools import setup
 
 setup(
-    name="sorting-algorithms",
+    name="Rosalind-katas",
     description="Rosalind problems",
     version=0.1,
     author=["Claire Gatenby"],
