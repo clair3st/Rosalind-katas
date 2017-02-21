@@ -1,6 +1,16 @@
-# Rosalind-katas
+# Rosalind-katas [![Build Status](https://travis-ci.org/clair3st/Rosalind-katas.svg?branch=master)](https://travis-ci.org/clair3st/Rosalind-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/Rosalind-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/Rosalind-katas?branch=master)
 
-## Computing GC content
+### Point Mutations
+
+- **source:** http://rosalind.info/problems/hamm/
+
+Given two strings ss and tt of equal length, the Hamming distance between ss and tt, denoted dH(s,t)dH(s,t), is the number of corresponding symbols that differ in ss and tt. See Figure 2.
+
+Given: Two DNA strings ss and tt of equal length (not exceeding 1 kbp).
+
+Return: The Hamming distance dH(s,t)dH(s,t).
+
+### Computing GC content
 
 - **source:** http://rosalind.info/problems/gc/
 
