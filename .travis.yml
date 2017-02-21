@@ -6,7 +6,7 @@ python:
 install:
     - pip install -e .[test]
 
-script: py.test src --cov=src --cov-report term-missing
+script: python -m pytest tests/
 
 notifications:
     email: false

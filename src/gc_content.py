@@ -3,13 +3,6 @@
 from sys import argv
 
 
-def open_fasta(file):
-    """Open test file and return as string."""
-    with open(file) as fasta:
-        output = fasta.read()
-    return output
-
-
 def format_data(fasta):
     """Format Fasta file into dict."""
     step1 = fasta.split()
@@ -20,7 +13,7 @@ def format_data(fasta):
 
 def gc_content(dna):
     """Given text file of Dna string find highest GC content."""
-    gc = (dna.count('C') + dna.count('G')) / len(dna)
+    gc = (dna.count('C') + dna.count('G')) / float(len(dna))
     return gc * 100
 
 
@@ -30,7 +23,14 @@ def highest_gc(data):
     return highest_gc[1] + '\n' + str(highest_gc[0])
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     script, filename = argv
+
+    def open_fasta(file):
+        """Open test file and return as string."""
+        with open(file) as fasta:
+            output = fasta.read()
+        return output
+
     opened = open_fasta(filename)
     print(highest_gc(format_data(opened)))

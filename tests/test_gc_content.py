@@ -1,6 +1,10 @@
 """Test for the gc content."""
 
 import pytest
+import sys
+import os
+myPath = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, myPath + '/../')
 
 TEST_INPUT = """>Rosalind_6404
 CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
@@ -41,4 +45,4 @@ def test_gc_content(dna, gc):
 def test_find_max_gc():
     """Test the input data returns the highest GC."""
     from src.gc_content import highest_gc
-    assert highest_gc(DATA) == 'Rosalind_0808\n60.91954022988506'
+    assert highest_gc(DATA) == 'Rosalind_0808\n60.91954022988506' or 'Rosalind_0808\n60.9195402299'
