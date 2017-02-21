@@ -13,7 +13,7 @@ def format_data(fasta):
 
 def gc_content(dna):
     """Given text file of Dna string find highest GC content."""
-    gc = (dna.count('C') + dna.count('G')) / len(dna)
+    gc = (dna.count('C') + dna.count('G')) / float(len(dna))
     return gc * 100
 
 
