@@ -1,5 +1,13 @@
 # Rosalind-katas [![Build Status](https://travis-ci.org/clair3st/Rosalind-katas.svg?branch=master)](https://travis-ci.org/clair3st/Rosalind-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/Rosalind-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/Rosalind-katas?branch=master)
 
+### Translation
+
+- **source:** http://rosalind.info/problems/prot/
+
+Given: An RNA string ss corresponding to a strand of mRNA (of length at most 10 kbp).
+
+Return: The protein string encoded by ss.
+
 ### Point Mutations
 
 - **source:** http://rosalind.info/problems/hamm/
