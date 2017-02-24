@@ -17,8 +17,9 @@ if __name__ == '__main__':  # pragma: no cover
     def open_file(file):
         """Open test file and return as string."""
         with open(file) as f:
-            output = f.readlines()
+            output = [word.strip() for word in f]
         return output
 
-    a, b = open_file(filename)
-    print(substring(a, b))
+    output = open_file(filename)
+
+    print(substring(''.join(output[:-1]), output[-1]))
