@@ -5,11 +5,10 @@ from sys import argv
 
 def format_data(fasta):
     """Format fasta file into list of DNA strings."""
-    # return [val for idx, val in enumerate(fasta) if idx % 2 != 0]
     step1 = fasta.split()
     step2 = ''.join(step1)
     step3 = step2.split('>')[1:]
-    return [i[13:] for i in step3]
+    return [i[10:] for i in step3]
 
 
 def generate_profile(dna):
