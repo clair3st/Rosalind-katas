@@ -1,5 +1,13 @@
 # Rosalind-katas [![Build Status](https://travis-ci.org/clair3st/Rosalind-katas.svg?branch=master)](https://travis-ci.org/clair3st/Rosalind-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/Rosalind-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/Rosalind-katas?branch=master)
 
+### Substring
+
+- **source:** http://rosalind.info/problems/subs/
+
+Given: Two DNA strings ss and tt (each of length at most 1 kbp).
+
+Return: All locations of tt as a substring of ss.
+
 ### Translation
 
 - **source:** http://rosalind.info/problems/prot/
