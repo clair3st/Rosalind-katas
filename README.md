@@ -1,5 +1,13 @@
 # Rosalind-katas [![Build Status](https://travis-ci.org/clair3st/Rosalind-katas.svg?branch=master)](https://travis-ci.org/clair3st/Rosalind-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/Rosalind-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/Rosalind-katas?branch=master)
 
+### Consensus and Profile
+
+- **source:** http://rosalind.info/problems/cons/
+
+Given: A collection of at most 10 DNA strings of equal length (at most 1 kbp) in FASTA format.
+
+Return: A consensus string and profile matrix for the collection. (If several possible consensus strings exist, then you may return any one of them.)
+
 ### Substring
 
 - **source:** http://rosalind.info/problems/subs/
