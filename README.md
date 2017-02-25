@@ -1,5 +1,13 @@
 # Rosalind-katas [![Build Status](https://travis-ci.org/clair3st/Rosalind-katas.svg?branch=master)](https://travis-ci.org/clair3st/Rosalind-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/Rosalind-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/Rosalind-katas?branch=master)
 
+### Finding a Shared Motif
+
+- **source:** http://rosalind.info/problems/lcsm/
+
+Given: A collection of kk (k≤100k≤100) DNA strings of length at most 1 kbp each in FASTA format.
+
+Return: A longest common substring of the collection. (If multiple solutions exist, you may return any single solution.)
+
 ### Consensus and Profile
 
 - **source:** http://rosalind.info/problems/cons/
