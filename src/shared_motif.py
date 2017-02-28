@@ -11,22 +11,15 @@ def long_substr(data):
 
     Update for the longest substring.
     """
-    substr = ''
-    for i in range(len(data[0])):
-        for j in range(len(data[0]) - i + 1):
-            if j > len(substr) and is_substr(data[0][i:i + j], data):
-                substr = data[0][i:i + j]
-    return substr
-
-
-def is_substr(find, data):
-    """Return true if substring is in all items of data."""
-    if len(data) < 1 and len(find) < 1:
-        return False
-    for i in range(len(data)):
-        if find not in data[i]:
-            return False
-    return True
+    longest_substr = ''
+    for start_idx in range(len(data[0])):
+            for len_substr in range(len(data[0]) - start_idx + 1):
+                substr = data[0][start_idx:start_idx + len_substr]
+                if len_substr > len(longest_substr) and all(
+                    substr in dna for dna in data
+                ):
+                    longest_substr = substr
+    return longest_substr
 
 
 if __name__ == '__main__':  # pragma: no cover
