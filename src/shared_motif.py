@@ -1,10 +1,9 @@
 """Find shared motif."""
 
 from sys import argv
-from profile import format_data
 
 
-def long_substr(data):
+def longest_substring(data):
     """Loop through each character to be start of substring.
 
     keep track of a substrings that appear in all items in list.
@@ -23,6 +22,8 @@ def long_substr(data):
 
 
 if __name__ == '__main__':  # pragma: no cover
+    from profile import format_data
+
     script, filename = argv
 
     def open_file(file):
@@ -33,4 +34,4 @@ if __name__ == '__main__':  # pragma: no cover
 
     data = format_data(open_file(filename))
 
-    print(long_substr(data))
+    print(longest_substring(data))
