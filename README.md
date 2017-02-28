@@ -8,6 +8,8 @@ Given: A collection of kk (k≤100k≤100) DNA strings of length at most 1 kbp e
 
 Return: A longest common substring of the collection. (If multiple solutions exist, you may return any single solution.)
 
+*reference:* http://stackoverflow.com/questions/2892931/longest-common-substring-from-more-than-two-strings-python
+
 ### Consensus and Profile
 
 - **source:** http://rosalind.info/problems/cons/
